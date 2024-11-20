@@ -79,7 +79,7 @@ header{
 
 /* MAIN */
 main{
-    background-image: url(./img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     background-attachment: fixed;
 }
 
@@ -103,7 +103,7 @@ main{
             top: 10vh;
             width: 100%;
             height: 90vh;
-            background-image: url(./img/primero.jpg);
+            background-image: url(../img/primero.jpg);
             background-position: right;
             background-size: cover;
         }
@@ -596,5 +596,160 @@ footer{
         height: 15vh;
         background: linear-gradient(to top, black, transparent);
         z-index: 999;
+    }
+}
+
+
+
+
+
+/* NEWS */
+
+/* PRINCIPAL */
+#news{
+    height: fit-content;
+
+    > div:nth-child(1){
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(to bottom, black, transparent);
+        z-index: 999;
+    }
+
+    > h1{
+        color: white;
+        font-size: 35px;
+        margin-left: 10%;
+
+    }
+
+    > div:nth-child(3){
+        width: 80%;
+        margin: auto;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        > div:nth-child(1){
+            height: 100%;
+            width: 55%;
+            
+            article{
+                display: flex;
+                height: 600px;
+                max-width: 100%;
+                flex-direction: column;
+                background-color: rgba(17, 148, 109, 0.5);
+                border: 2px solid black;
+                border-radius: 5px;
+
+                > div:nth-child(1){
+                    width: 100%;
+
+                    img{
+                        max-width: 100%;
+                        border-bottom: 2px solid black;
+                    }
+                }
+
+                > div:nth-child(2){
+                    display: flex;
+                    height: 20%;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h3{
+                        margin: 5px;
+                    }
+                    
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        width: 99%;
+                        text-align: end;
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+
+        > div:nth-child(2){
+            height: 600px;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+    
+            > article{
+                background-color: rgba(17, 148, 109, 0.5);
+                height: 25%;
+                width: 100%;
+                border: 2px solid black;
+                border-radius: 5px;
+                display: flex;
+
+                > div:nth-child(1){
+                    width: 45%;
+                    overflow: hidden;
+
+                    img{
+                        max-width: 100%;
+                        height: 100%;
+                    }
+                }
+    
+                > div:nth-child(2){
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    > h3{
+                        margin: 5px;
+                    }
+    
+                    > a{
+                        text-decoration: none;
+                        color: black;
+                        width: 99%;
+                        text-align: end;
+                        margin: 5px 0;
+                    }
+                }
+            }
+
+            /* > article:nth-child(1){
+                >div:nth-child(1){
+                    background: url(../img/noticia2.png);
+                }
+            }
+
+            > article:nth-child(2){
+                >div:nth-child(1){
+                    background: url(../img/noticia3.png);
+                }
+            }
+
+            > article:nth-child(3){
+                >div:nth-child(1){
+                    background: url(../img/noticia4.png);
+                }
+            } */
+    
+            > a{
+                width: fit-content;
+                text-decoration: none;
+                color: black;
+                background-color: rgba(17, 148, 109, 0.75);
+                padding: 12px;
+                border: 2px solid black;
+                border-radius: 10px;
+                font-weight: 700;
+            }
+        }
     }
 }
