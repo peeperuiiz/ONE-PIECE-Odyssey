@@ -1,0 +1,6 @@
+SLIDER PERSONAJES
+
+	- Personaje Main
+		img: 500x700
+	- Personaje Side
+		img: 250x300
