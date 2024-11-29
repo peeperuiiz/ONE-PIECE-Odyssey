@@ -31,7 +31,7 @@ header{
         .logo{
             width: fit-content;
 
-            a{
+            > a{
                 width: 100%;
                 height: 100%;
 
@@ -44,14 +44,21 @@ header{
         div:nth-child(2){
             display: flex;
             width: 100%;
-            justify-content: space-between;
+
+            > button{
+                display: none;
+            }
 
             .enlaces1{
                 width: 100%;
                 display: flex;
                 align-items: center;
 
-                a{
+                > button{
+                    display: none;
+                }
+
+                > a{
                     text-decoration: none;
                     margin: 0 20px;
                     color: white;
@@ -61,6 +68,7 @@ header{
             .bttH{
                 display: flex;
                 justify-content: end;
+                width: 200px;
 
                 .CH{
                     text-decoration: none;
@@ -93,7 +101,7 @@ main{
         position: relative;
         height: 15vh;
         background: linear-gradient(to bottom, black, transparent);
-        z-index: 999;
+        z-index: 998;
     }
 
     > div:nth-child(2){
@@ -120,7 +128,7 @@ main{
         .centro{
             width: 100%;
             position: absolute;
-            z-index: 999;
+            z-index: 998;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -336,6 +344,7 @@ main{
 
 
 
+/* FOOTER */
 footer{
     height: 10vh;
     background-color: black;
@@ -388,7 +397,7 @@ footer{
         width: 100%;
         height: 15vh;
         background: linear-gradient(to bottom, black, transparent);
-        z-index: 999;
+        z-index: 998;
     }
 
     > div:nth-child(2){
@@ -481,11 +490,13 @@ footer{
             color: rgba(17, 148, 109, 0.5);
             font-size: 50px;
             z-index: 999;
-            -webkit-text-stroke: 2px rgb(17, 148, 109)
+            -webkit-text-stroke: 2px rgb(17, 148, 109);
+            cursor: pointer;
         }
 
         #der{
             transform: rotate(180deg);
+            cursor: pointer;
         }
 
         #PsliderE{
@@ -591,7 +602,7 @@ footer{
         width: 100%;
         height: 15vh;
         background: linear-gradient(to bottom, black, transparent);
-        z-index: 999;
+        z-index: 998;
     }
 
     h1{
@@ -714,7 +725,7 @@ footer{
         width: 100%;
         height: 15vh;
         background: linear-gradient(to bottom, black, transparent);
-        z-index: 999;
+        z-index: 998;
     }
 
     > h1{
@@ -1027,7 +1038,7 @@ footer{
         width: 100%;
         height: 15vh;
         background: linear-gradient(to bottom, black, transparent);
-        z-index: 999;
+        z-index: 998;
     }
 
     > h1{
@@ -1287,6 +1298,8 @@ footer{
 
 
 
+
+
 @media (max-width: 1500px){
 #bio {
     > div:nth-child(3) {
@@ -1296,6 +1309,209 @@ footer{
 #onepiece {
     > div {
         width: 70%;
+    }
+}
+
+
+
+/* FOOTER */
+footer{
+    height: fit-content;
+
+    > div{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+
+        >div:nth-child(1){
+            text-align: center;
+        }
+
+        > div:nth-child(2){
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+}
+
+
+
+
+
+@media (max-width: 1200px){
+/* HEADER */
+header{
+
+    nav{
+
+        div:nth-child(2){
+            justify-content: space-between;
+            
+            > button{
+                display: block;
+                margin: 0 20px;
+                font-size: 2rem;
+                background-color: transparent;
+                border: none;
+                color: white;
+            }
+
+            .enlaces1{
+                display: flex;
+                flex-flow: nowrap column;
+                justify-content: space-around;
+                align-items: center;
+                min-height: 100vh;
+                min-width: 20%;
+                position: fixed;
+                background-color: black;
+                padding: 20px;
+                top: 0%;
+                right: 100%;
+                z-index: 999;
+                transition: left 500ms;
+
+                > button{
+                    display: block;
+                    margin: 0 20px;
+                    font-size: 2rem;
+                    background-color: transparent;
+                    border: none;
+                    color: white;
+                }
+
+                > a{
+                    font-size: 25px;
+                    text-decoration: none;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    padding-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* SECCIÓN TRAILER */
+#video{
+    gap: 100px;
+
+    > div:nth-child(1){
+        text-align: center;
+        width: 80%;
+        flex-direction: column;
+
+        > div:nth-child(1){
+            width: 100%;
+        }
+
+        > div:nth-child(2){
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+/* CARACTERÍSTICAS PRINCIPALES */
+#caract{
+
+    > div:nth-child(2){
+
+        > div{
+
+            .info1{
+
+                h2{
+                    width: 100%;
+                }
+            }
+
+            .info{
+
+                h2{
+                    width: 100%;
+                }
+            }
+        }
+    } 
+}
+}
+
+
+
+
+
+@media (max-width: 1080px){
+footer{
+
+    > div{
+
+        > div:nth-child(2){
+            flex-wrap: wrap;
+        }
+    }
+}
+}
+
+
+
+
+
+@media (max-width: 720px){
+/* SECCIÓN TRAILER */
+#video{
+
+    > div:nth-child(2){
+
+        > div{
+            flex-direction: column;
+
+            button{
+                width: 200px;
+            }
+        }
+    }
+}
+}
+
+
+
+
+
+@media (max-width: 500px){
+/* SECCIÓN TRAILER */
+#video{
+
+    > div:nth-child(2){
+
+        > div{
+            flex-direction: column;
+
+            button{
+                width: 80%;
+            }
+        }
+    }
+
+    .CH{
+        width: 80%;
+    }
+}
+
+
+
+
+/* CARACTERÍSTICAS PRINCIPALES */
+#caract{
+
+    .imgs{
+        display: none;
     }
 }
 }

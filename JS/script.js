@@ -1,5 +1,25 @@
 
 document.addEventListener("DOMContentLoaded", () => {
+    let menu = document.querySelector(".enlaces1");             
+    let abrir = document.querySelector(".abrir");          
+    let cerrar = document.querySelector(".cerrar");
+    
+
+    abrir.addEventListener("click", () => {
+        menu.style.right = "0%";                        
+    });
+
+    cerrar.addEventListener("click", () => {
+        menu.style.right = "100%";                                 
+    });
+
+    menu.addEventListener("mouseleave", () => {
+        menu.style.right = "100%";                                 
+    });
+
+
+
+
     const padre = document.querySelector("#PsliderE"); 
     const izq = document.querySelector("#izq"); 
     const der = document.querySelector("#der"); 
