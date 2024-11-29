@@ -643,7 +643,7 @@ footer{
             margin: 50px 0;
             
             article{
-                width: 25%;
+                width: 300px;
                 height: 350px;
                 background-color: rgba(17, 148, 109, 0.5);
                 border: 2px solid black;
@@ -684,7 +684,7 @@ footer{
 
     > div:nth-child(2){
         height: 400px;
-        width: 40%;
+        width: 700px;
         margin: auto;
         background-color: rgba(17, 148, 109, 0.5);
         border: 2px solid black;
@@ -1277,24 +1277,9 @@ footer{
 /* NOTICIAS */
 
 /* NEWS */
-#news{
+/* #news{
 
-    > div:nth-child(3){
-        height: 500px;
-
-        > div:nth-child(1){
-            
-            article{
-                height: 100%;
-            }
-        }
-
-        > div:nth-child(2){
-            height: 100%;
-        }
-    }
-}
-}
+} */
 
 
 
@@ -1331,6 +1316,62 @@ footer{
             display: flex;
             justify-content: center;
         }
+    }
+}
+}
+
+
+
+
+
+@media (max-width: 1400px){
+/* SLIDER PERSONAJES */
+#Pslider{
+    height: auto;
+
+    > div:nth-child(1){
+
+        #PsliderE{
+            height: fit-content;
+
+            .mainP{
+                height: fit-content;
+                
+                > div:nth-child(1){
+                    width: 500px;
+                    overflow: hidden;
+                    
+                    > img{
+                        max-width: 100%;
+                    }
+                }
+                
+                > div:nth-child(2){
+                    height: fit-content;
+                    
+                    > div:nth-child(1){
+                        width: 100%;
+
+                        > img{
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        
+            .extraP{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+#selector{
+
+    > div:nth-child(3){
+        width: 85%;
     }
 }
 }
@@ -1441,6 +1482,27 @@ header{
         }
     } 
 }
+
+
+
+/* LUFFY */
+#luffy{
+
+    > div{
+        width: 100%;
+        flex-direction: column-reverse;
+
+
+        > div:nth-child(1){
+            width: 70%;
+            text-align: center;
+        }
+
+        > div:nth-child(2){
+            width: 70%;
+        }
+    }
+}
 }
 
 
@@ -1448,12 +1510,96 @@ header{
 
 
 @media (max-width: 1080px){
+#selector{
+    
+    > div:nth-child(3){
+        width: 85%;
+
+        > div:nth-child(2){
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            
+            article{
+                width: 40%;
+            }
+        }
+    }
+}
+
+
+
 footer{
 
     > div{
 
         > div:nth-child(2){
             flex-wrap: wrap;
+        }
+    }
+}
+}
+
+
+
+
+
+@media (max-width: 800px){
+#arcos{
+    
+    > div:nth-child(2){
+        display: none;
+    }
+}
+
+
+
+/* SELECTOR */
+#selector{
+    > div:nth-child(3){
+
+        > div:nth-child(1){
+            flex-direction: column;
+            width: 100%;
+
+            button{
+                width: 400px;
+            }
+        }
+
+        > div:nth-child(2){
+            
+            article{
+                width: 400px;
+            }
+        }
+    }
+}
+
+
+
+/* CONTENIDO DESCARGABLE */
+#descargar{
+
+    > div:nth-child(2){
+        height: fit-content;
+        width: 400px;
+        flex-direction: column;
+
+
+        > div:nth-child(1){
+            width: 90%;
+
+            img{
+                width: 100%;
+                margin: 10px;
+            }
+        }
+
+        > div:nth-child(2){
+            width: 90%;
+            color: white;
+            text-align: center;
         }
     }
 }
